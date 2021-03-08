@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HomeWork9</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Tasks</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary" id='addToDoneBtn'>Move to Done</button>
+                    <button type="button" class="btn btn-outline-primary" id='removeToPoolBtn'>Remove</button>
+                    <button type="button" class="btn btn-outline-danger" id='clearListBtn'>Clear lists</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col order-first text-center">
+                    <h4>Active</h4>
+                </div>
+                <div class="col order-last text-center">
+                    <h4>Done</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col order-first">
+                    <ul class="list-group" id='activeList'>
+                    </ul>
+                </div>
+                <div class="col order-last">
+                    <ul class="list-group" id='doneList'>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <h2>Pool</h2>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Task Name" aria-label="Task Name" aria-describedby="addtask" id="inpAddTask">
+                <button class="btn btn-primary" type="button" id="addtask">Add New Task</button>
+              </div>
+              <button type="button" class="btn btn-outline-primary" id='addToActiveBtn'>Move to Active</button>
+              <button type="button" class="btn btn-outline-primary" id="removeFromPoolBtn">Remove</button>
+            </div>
+        </div>
+          <div class="row">
+            <div class="col">
+              <ul class="list-group" id='poolList'>
+              </ul>
+          </div>
+          </div>
+        </div>    
+    </body>
+</html>
